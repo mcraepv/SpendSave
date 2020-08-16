@@ -1,5 +1,3 @@
-const { NamedModulesPlugin } = require('webpack');
-
 let db;
 
 const request = indexedDB.open('budget', 1);
@@ -58,4 +56,4 @@ function checkDatabase() {
 
 window.addEventListener('online', checkDatabase);
 
-export { saveRecord };
+export default saveRecord;
